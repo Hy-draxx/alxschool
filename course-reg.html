@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alx Student - Course Registration</title>
+    <link rel="stylesheet" href="styles/course-registration.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_wrapper">
+        <div class="hamburger" id="hamburger-btn">
+          <i class="fa-solid fa-navicon fa-1x"></i>
+        </div>
+        <img src="assets/navbrand.svg" alt="alx" class="avatar" />
+        <div class="nav_flex">
+          <div class="notification-wrapper">
+            <img
+              src="assets/notificationbell.svg"
+              alt="notificationbell"
+              id="notification-btn"
+            />
+            <div id="notification-dropdown" class="dropdown">
+              <div class="dropdown-header">
+                <span>Notifications</span>
+                <a href="#" class="mark-read">Mark all as read</a>
+                <button class="close-btn">
+                  <img src="assets/cancel-circle.svg" alt="x" />
+                </button>
+              </div>
+              <ul class="notification-list">
+                <li
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: space-between;
+                    "
+                  >
+                    <strong style="display: inline-flex; gap: 7px">
+                      <img src="assets/purpledot.svg" alt="" />
+                      Results are Out!!
+                    </strong>
+                    <p>Check your second semester results</p>
+                  </div>
+                  <span class="notification-time">22/12/2022, 4:50pm</span>
+                </li>
+                <li
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: space-between;
+                    "
+                  >
+                    <strong style="display: inline-flex; gap: 7px">
+                      <img src="assets/purpledot.svg" alt="" />
+                      Course Reg Deadline
+                    </strong>
+                    <p>Course form portal will close in 48 Hours</p>
+                  </div>
+                  <span class="notification-time">22/12/2022, 4:50pm</span>
+                </li>
+                <li
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: space-between;
+                    "
+                  >
+                    <strong style="display: inline-flex; gap: 7px">
+                      <img src="assets/purpledot.svg" alt="" />
+                      Science Semina
+                    </strong>
+                    <p>Science Seminar is tomorrow</p>
+                  </div>
+                  <span class="notification-time">22/12/2022, 4:50pm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="avatar-wrapper">
+            <button id="avatar-btn">
+              <img src="assets/avatar.svg" alt="avatar" />
+            </button>
+            <div id="profile-dropdown" class="dropdown">
+              <div class="profile_bg">
+                <div class="profile-info">
+                  <img src="assets/avatar.svg" alt="avatar" />
+                  <span>Ibrahim Mohammed</span>
+                </div>
+                <ul class="profile-options">
+                  <li>
+                    <a href="profile.html">
+                      <img src="assets/profile.svg" alt="Profile Icon" />
+                      <span> Update Profile Information</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/lock.svg" alt="Password Icon" />
+                      <span>Change Login Password</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="logout">
+                <img src="assets/logout-01.svg" alt="Logout Icon" />
+                <span>Log out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <aside id="sidebar">
+      <div
+        class="profile"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          padding-top: 20px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+          "
+        >
+          <img src="assets/navbrand.svg" alt="logo" />
+          <img
+            src="assets/cancel-circle.svg"
+            id="close-sidebar"
+            alt="x"
+            style="width: 25px; height: 25px"
+          />
+        </div>
+        <a href="profile.html"><img src="assets/avatar.svg" alt="avatar" /></a>
+        <p style="text-align: center">Ibrahim Mohammed Aliu</p>
+        <p>U16/FNS/CSC/1044</p>
+        <p>300L - 2nd Semester</p>
+      </div>
+      <div class="border"></div>
+      <div class="navigation">
+        <div class="nav_active">
+          <i class="fa-solid fa-home fa-1x"></i>
+          <a href="index.html">Overview</a>
+        </div>
+        <div class="navigation_item">
+          <i class="fa-solid fa-naira-sign fa-1x"></i>
+          <a href="/">Fees</a>
+        </div>
+        <div class="navigation_item">
+          <i class="fa-solid fa-edit fa-1x"></i>
+          <a href="course-registration.html">Course Registration</a>
+        </div>
+        <div class="navigation_item">
+          <i class="fa-solid fa-envelope fa-1x"></i>
+          <a href="/">Admission Letter</a>
+        </div>
+        <div class="navigation_item">
+          <i class="fa-solid fa-list-alt fa-1x"></i>
+
+          <a href="result.html">Results</a>
+        </div>
+      </div>
+    </aside>
+    <div class="home_container">
+      <div class="aside">
+        <div class="profile">
+          <a href="profile.html"
+            ><img src="assets/avatar.svg" alt="avatar"
+          /></a>
+          <p>Ibrahim Mohammed Aliu</p>
+          <p>U16/FNS/CSC/1044</p>
+          <p>300L - 2nd Semester</p>
+        </div>
+        <div class="border"></div>
+        <div class="navigation">
+          <div class="navigation_item">
+            <i class="fa-solid fa-home fa-1x"></i>
+            <a href="index.html">Overview</a>
+          </div>
+          <div class="navigation_item">
+            <i class="fa-solid fa-naira-sign fa-1x"></i>
+            <a href="/">Fees</a>
+          </div>
+          <div class="nav_active">
+            <i class="fa-solid fa-edit fa-1x"></i>
+            <a href="course-registration.html">Course Registration</a>
+          </div>
+          <div class="navigation_item">
+            <i class="fa-solid fa-envelope fa-1x"></i>
+            <a href="/">Admission Letter</a>
+          </div>
+          <div class="navigation_item">
+            <i class="fa-solid fa-list-alt fa-1x"></i>
+
+            <a href="result.html">Results</a>
+          </div>
+        </div>
+      </div>
+      <div class="other_side">
+        <div class="other_side_header">
+          <p class="other_side_title">300 Level</p>
+          <button class="download">
+            <span>
+              <img src="assets/pencil-edit-01.svg" alt="download-icon" /></span
+            ><span>Download Course Form</span>
+          </button>
+        </div>
+        <div class="course_registration_container">
+          <div class="course_header">
+            <p class="course_header_text">First Semester</p>
+            <a>
+              <span>
+                <img
+                  src="assets/add-circle.svg"
+                  alt="add-circle
+                "
+                />
+              </span>
+              Add Course
+            </a>
+          </div>
+          <div class="courses">
+            <div>
+              <p>S/No</p>
+              <p>COURSE CODE</p>
+              <p>COURSE NAME</p>
+              <p>UNIT</p>
+              <p>ACTION</p>
+            </div>
+            <div>
+              <p>1</p>
+              <p>CSC301</p>
+              <p>Intro to Computer science</p>
+              <p>3</p>
+              <img src="assets/delete-03.svg" alt="trash" />
+            </div>
+          </div>
+          <div class="registered">
+            <p>Total Units Registered - 0 of 48 UNITS</p>
+          </div>
+        </div>
+        <div class="course_registration_container">
+          <div class="course_header">
+            <p class="course_header_text">Second Semester</p>
+            <a>
+              <span>
+                <img
+                  src="assets/add-circle.svg"
+                  alt="add-circle
+                  "
+                />
+              </span>
+              Add Course
+            </a>
+          </div>
+          <div class="courses">
+            <div>
+              <p>S/No</p>
+              <p>COURSE CODE</p>
+              <p>COURSE NAME</p>
+              <p>UNIT</p>
+              <p>ACTION</p>
+            </div>
+            <div>
+              <p>-</p>
+              <p>-</p>
+              <p>-</p>
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="registered">
+            <p>Total Units Registered - 0 of 48 UNITS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
